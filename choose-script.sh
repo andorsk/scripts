@@ -4,7 +4,7 @@ green=`tput setaf 2`
 yellow=`tput setaf 3`
 blue=`tput setaf 4`
 
-if [ $1 = "help" ]; then 
+if [[ ! -z $1  && $1 = "help" ]]; then 
     echo "A script chooser. Simply run ./choose-script.sh and it will read off all the other scripts in the folder and then provide an interface to interact wit the scripts. For help commands, type in the number corresponding with the command and then 'help' and you will get help commands related to usage. Extra args are processed as a string. WILL AUTOMATICALLY RELOAD BASH_PROFILE"
     printf "\e[0;35mUSAGE: ./choose-script.sh. 1. Enum Choice  2. Extra Args  \e[0m\n"
     exit

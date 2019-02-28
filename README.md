@@ -16,6 +16,8 @@ Ex. `alias srun='source $SCRIPTDIR/choose-script.sh'`
 Step 3: 
 Usage: Type `srun` in terminal
 
+![Example](sample.jpg)
+
 Some tools available:
 * A semi-persistent enviornmental varaible exporter
 * Quick access to a "Main" or "Working directory"
