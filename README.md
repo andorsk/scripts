@@ -20,7 +20,7 @@ Some tools available:
 Note: This is mostly a wrapper and facilitator toward these packages. Most of the packages and libraries themselves were not written for this project. 
 
 Depedencies: 
-osx-wifi-manager
-bcal
-timg
-cash
+* osx-wifi-manager
+* bcal
+* timg
+* cash
