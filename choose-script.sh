@@ -18,7 +18,9 @@ FARRAY=(${PARENTPATH}/*.sh)
 
 COUNTER=0
 for f in ${FARRAY[@]}; do 
-    printf "\e[48;5;161m $COUNTER : $(basename $f) \e[0m \n"
+    file=$(basename $f)
+    filename="${file%.*}"
+    printf "\e[48;5;161m $COUNTER : $filename \e[0m \n"
     COUNTER=$[$COUNTER +1]
 done
 

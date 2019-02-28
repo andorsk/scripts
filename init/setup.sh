@@ -4,3 +4,4 @@
 #
 echo "alias reload='source $HOME/.bash_profile'" >> $HOME/.bash_profile
 echo "export SCRIPTDIR=$(pwd)" >>  $HOME/.bash_profile
+echo "alias srun=$SCRIPTDIR/choose-script.sh" >> $HOME/.bash_profile

@@ -36,4 +36,3 @@ if [[ "$PERSIST" = true && (! -z "$VAR" ) ]];
 	echo "Nothing was done"
 fi
 
-"${PARENTPATH}/reload.sh"
