@@ -9,7 +9,6 @@ if [ $1 = "help" ]; then
     printf "\e[0;35mUSAGE: ./choose-script.sh. 1. Enum Choice  2. Extra Args  \e[0m\n"
     exit
 fi
-
     
 PARENTPATH=$(dirname "${BASH_SOURCE[0]}")
 echo "Running scripts from $PARENTPATH"
@@ -24,11 +23,16 @@ for f in ${FARRAY[@]}; do
     COUNTER=$[$COUNTER +1]
 done
 
-echo "Which script to you want to envoke. Enter Numeric Value"
+echo "Which script to you want to envoke. Enter Numeric Value or q to quit"
 read CHOICE
 
+if [ $CHOICE = "q" ]; then 
+    echo "Quitting"
+    exit 
+fi 
+
 echo "Add any extra arguments here or press enter to skip"
-read EXTRAARGS
+read -e EXTRAARGS
 
 if [[  -z $EXTRAARGS ]];
     then
