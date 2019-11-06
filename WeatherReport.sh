@@ -6,7 +6,8 @@ if [[ ( ! -z "$1") && ($1 = "help" ) ]]; then
     exit
 fi
 printf "\n\e[48;35;10m ------------------------------------------------ \e[0m\n"
-printf "\e[48;5;00m                \e[0m\e[48;35;10mWEATHER REPORT\e[0m\e[48;5;00m                \e[0m \n"
+printf "\e[48;5;00m                \e[0m\e[48;35;10mWEATHER REPORT\e[0m\e[48;5;00m                \e[0m "
+printf "\n\e[48;35;10m ------------------------------------------------ \e[0m\n"
 weather -c "Los Angeles" -C USA
 weather -c "San Francisco" -C USA
 weather -c "Delhi" -C Indi
